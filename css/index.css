@@ -1,0 +1,196 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://use.typekit.net/uec0moc.css");
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+h1 {
+  font-size: 4rem;
+  font-family: paralucent, sans-serif;
+  font-style: italic;
+  text-transform: uppercase;
+  width: 100%;
+}
+h1 span {
+  font-weight: bold;
+}
+h2 {
+  font-family: paralucent, sans-serif;
+  font-size: 4rem;
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+  padding: 30px 30px;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+.banner {
+  height: 400px;
+  width: 100%;
+  background: transparent linear-gradient(270deg, #F47421 0%, #EF4023 52%, #F47421 100%) 0% 0% no-repeat padding-box;
+  opacity: 1;
+}
+.quadWheels {
+  width: 100%;
+  min-height: 800px;
+  background: url('../images/GettyImages-501258750.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: white;
+}
+.madeInAmerica {
+  min-height: 100px;
+  background-color: #EE3E46;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.madeInAmerica .whiteLogo {
+  padding-right: 2%;
+}
+.wheelsHardware {
+  min-height: 400px;
+  background-color: #FBFBFB;
+}
+.aboutAnabolix {
+  width: 100%;
+}
