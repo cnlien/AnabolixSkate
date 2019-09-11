@@ -147,6 +147,9 @@ h2 {
   align-items: center;
   justify-content: center;
 }
+h2 span {
+  font-size: 4rem;
+}
 * {
   box-sizing: border-box;
 }
@@ -183,6 +186,20 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+@media (max-width: 768px) {
+  .madeInAmerica h2 {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 0;
+    white-space: pre-wrap;
+  }
+  .madeInAmerica h2 .whiteLogo {
+    margin-bottom: 4%;
+  }
 }
 .madeInAmerica .whiteLogo {
   padding-right: 2%;

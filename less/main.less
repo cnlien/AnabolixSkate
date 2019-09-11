@@ -43,6 +43,22 @@ html {
   align-items: center;
   justify-content: center;
 
+  @media @tablet {
+    h2 {
+      display: flex;
+      flex-flow: column nowrap;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 5% 0;
+      white-space:pre-wrap;
+
+      .whiteLogo {
+        margin-bottom: 4%;
+      }
+    }
+  }
+
   .whiteLogo {
     padding-right: 2%;
   }
