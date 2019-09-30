@@ -15,9 +15,9 @@ html {
   text-align: center;
 }
 
-.specialWheels {
+// .specialWheels {
 
-}
+// }
 .banner {
   height: 400px;
   width: 100%;
@@ -34,6 +34,83 @@ html {
   background-attachment: fixed;
   background-size: cover;
   background-color: white;
+
+  h1 {
+    text-align: center;
+    padding-top: 2%;
+  }
+
+  .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;  
+
+    .wheelCardSmall {
+      width: 25%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      border: 1px solid #008CCC;
+      border-radius: 5px;
+      background: white;
+      margin: 2%;
+      padding: 2% 0;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 0.9;
+
+      .wheelImage {
+        max-width: 100%;
+      }
+      
+     }
+
+    .wheelCardLarge {
+      width: 30%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-flow: column nowrap;
+      border: 1px solid #008CCC;
+      border-radius: 5px;
+      background: white;
+      margin: 2% 0;
+      padding: 2% 0;
+      box-shadow: 0px 3px 6px #00000029;
+      opacity: 0.9;
+    }
+
+    .wheelInfo {
+      width: 90%;
+      padding: 2%;
+      display: grid;
+      grid-template-columns: auto auto auto auto;
+      text-align: left;
+      grid-gap: 10%;
+
+
+      .wheelCardIcon {
+        width: 100%;
+        margin: 2%;
+        grid-row-start: 0;
+        grid-column-end:2;
+      }
+
+      .wheelCardText {
+        width: 100%;
+        margin: 2%;
+        font-size: 1.25rem;
+        line-height: 1.4rem;
+        grid-column-start: 2;
+        grid-column-end: 4;
+        align-content: center;
+      }
+    }
+
+
+
+  }
 }
 
 .madeInAmerica {
