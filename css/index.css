@@ -167,21 +167,8 @@ html {
   flex-flow: column wrap;
   text-align: center;
 }
-.banner {
-  height: 400px;
-  width: 100%;
-  background: transparent linear-gradient(270deg, #F47421 0%, #EF4023 52%, #F47421 100%) 0% 0% no-repeat padding-box;
-  opacity: 1;
-}
 .quadWheels {
   width: 100%;
-  min-height: 800px;
-  background: url('../images/GettyImages-501258750.png');
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-  background-color: white;
 }
 .quadWheels h1 {
   text-align: center;
@@ -193,59 +180,77 @@ html {
   align-items: center;
   justify-content: center;
 }
-.quadWheels .container .wheelCardSmall {
-  width: 25%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-flow: column nowrap;
-  border: 1px solid #008CCC;
-  border-radius: 5px;
-  background: white;
-  margin: 2%;
-  padding: 2% 0;
-  box-shadow: 0px 3px 6px #00000029;
-  opacity: 0.9;
-}
-.quadWheels .container .wheelCardSmall .wheelImage {
-  max-width: 100%;
-}
-.quadWheels .container .wheelCardLarge {
+.quadWheels .container .wheelCard {
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column nowrap;
   border: 1px solid #008CCC;
-  border-radius: 5px;
+  border-radius: 8px;
   background: white;
-  margin: 2% 0;
+  margin: 2%;
   padding: 2% 0;
   box-shadow: 0px 3px 6px #00000029;
   opacity: 0.9;
 }
+.quadWheels .container .wheelCard .wheelsHeader {
+  color: #008CCC;
+}
+.quadWheels .container .wheelCard .wheelImage {
+  max-width: 100%;
+}
 .quadWheels .container .wheelInfo {
   width: 90%;
-  padding: 2%;
-  display: grid;
-  grid-template-columns: auto auto auto auto;
-  text-align: left;
-  grid-gap: 10%;
-}
-.quadWheels .container .wheelInfo .wheelCardIcon {
-  width: 100%;
-  margin: 2%;
-  grid-row-start: 0;
-  grid-column-end: 2;
+  display: flex;
+  flex-flow: column wrap;
+  align-content: center;
+  align-items: center;
 }
 .quadWheels .container .wheelInfo .wheelCardText {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+}
+.quadWheels .container .wheelInfo .styleIcons {
+  width: 100%;
+  border-top: 1px solid black;
+  margin-top: 10px;
+  padding-top: 10px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-content: center;
+  align-items: center;
+}
+.quadWheels .container .wheelInfo .styleIcons .skateStyle {
+  flex-basis: 120px;
+  flex-shrink: 1;
+}
+.quadWheels .container .wheelInfo .styleIcons .skateStyle h3 {
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: sans-serif;
+}
+.quadWheels .container .wheelInfo .styleIcons .styleIcon {
   width: 100%;
   margin: 2%;
-  font-size: 1.25rem;
-  line-height: 1.4rem;
-  grid-column-start: 2;
-  grid-column-end: 4;
-  align-content: center;
+}
+.quadWheels .container .wheelInfo .viewButton {
+  width: 100%;
+  padding: 20px 0;
+  border-radius: 50px;
+  background-color: #008CCC;
+  cursor: pointer;
+  color: #ffffff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.quadWheels .container .wheelInfo .viewButton:hover {
+  background-color: #0061a7;
 }
 .madeInAmerica {
   min-height: 100px;
