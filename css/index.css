@@ -181,7 +181,7 @@ html {
 }
 .productSection h1 {
   text-align: center;
-  padding-top: 2%;
+  padding-top: 4%;
 }
 .productSection .container {
   display: flex;
@@ -223,15 +223,15 @@ html {
 .productSection .container .wheelInfo .styleIcons {
   width: 100%;
   border-top: 1px solid black;
-  margin-top: 10px;
-  padding-top: 10px;
+  margin-top: 20px;
+  padding-top: 20px;
   display: flex;
   flex-flow: row nowrap;
   align-content: center;
   align-items: center;
 }
 .productSection .container .wheelInfo .styleIcons .skateStyle {
-  flex-basis: 120px;
+  flex-basis: 100px;
   flex-shrink: 1;
 }
 .productSection .container .wheelInfo .styleIcons .skateStyle h3 {
@@ -258,6 +258,7 @@ html {
   text-transform: uppercase;
   font-weight: bold;
   letter-spacing: 1px;
+  transition: background-color 0.3s ease;
 }
 .productSection .container .wheelInfo .viewButton:hover {
   background-color: #0061a7;
