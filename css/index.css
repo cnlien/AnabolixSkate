@@ -247,6 +247,7 @@ html {
 .productSection .container .wheelInfo .viewButton {
   width: 100%;
   padding: 20px 0;
+  margin-top: 20px;
   border-radius: 50px;
   background-color: #008CCC;
   cursor: pointer;
