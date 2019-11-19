@@ -215,7 +215,7 @@ html {
 }
 @media (max-width: 768px) {
   .productSection .container .wheelCard {
-    width: 80%;
+    width: 100%;
   }
 }
 .productSection .container .wheelCard .wheelsHeader {
