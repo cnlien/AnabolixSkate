@@ -1,0 +1,580 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anabolix Skate New Homepage</title>
+  <style>
+        /* http://meyerweb.com/eric/tools/css/reset/
+    v2.0 | 20110126
+    License: none (public domain)
+    */
+    @import url("https://use.typekit.net/uec0moc.css");
+    html,
+    body,
+    div,
+    span,
+    applet,
+    object,
+    iframe,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    blockquote,
+    pre,
+    a,
+    abbr,
+    acronym,
+    address,
+    big,
+    cite,
+    code,
+    del,
+    dfn,
+    em,
+    img,
+    ins,
+    kbd,
+    q,
+    s,
+    samp,
+    small,
+    strike,
+    strong,
+    sub,
+    sup,
+    tt,
+    var,
+    b,
+    u,
+    i,
+    center,
+    dl,
+    dt,
+    dd,
+    ol,
+    ul,
+    li,
+    fieldset,
+    form,
+    label,
+    legend,
+    table,
+    caption,
+    tbody,
+    tfoot,
+    thead,
+    tr,
+    th,
+    td,
+    article,
+    aside,
+    canvas,
+    details,
+    embed,
+    figure,
+    figcaption,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    output,
+    ruby,
+    section,
+    summary,
+    time,
+    mark,
+    audio,
+    video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article,
+    aside,
+    details,
+    figcaption,
+    figure,
+    footer,
+    header,
+    hgroup,
+    menu,
+    nav,
+    section {
+    display: block;
+    }
+    body {
+    line-height: 1;
+    }
+    ol,
+    ul {
+    list-style: none;
+    }
+    blockquote,
+    q {
+    quotes: none;
+    }
+    blockquote:before,
+    blockquote:after,
+    q:before,
+    q:after {
+    content: '';
+    content: none;
+    }
+    table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    }
+    h1 {
+    font-size: 4rem;
+    font-family: paralucent, sans-serif;
+    font-style: italic;
+    text-transform: uppercase;
+    width: 100%;
+    }
+    h1 span {
+    font-weight: bold;
+    }
+    h2 {
+    font-family: paralucent, sans-serif;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    h2 span {
+    font-size: 3rem;
+    }
+    p {
+    font-family: open-sans, sans-serif;
+    }
+    * {
+    box-sizing: border-box;
+    }
+    html {
+    font-size: 62.5%;
+    }
+    .container {
+    max-width: 1260px;
+    margin: 0 auto;
+    padding: 30px 30px;
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+    }
+    .sectionDescription {
+    max-width: 600px;
+    margin: 20px auto 0 auto;
+    font-size: 16px;
+    line-height: 24px;
+    }
+    @media (max-width: 768px) {
+    .sectionDescription {
+        margin: 20px 10px 0 10px;
+    }
+    }
+    .grey-background {
+    background: #D6D6D6;
+    }
+    .productSection {
+    width: 100%;
+    }
+    .productSection h1 {
+    text-align: center;
+    padding-top: 4%;
+    }
+    .productSection .container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: center;
+    }
+    @media (max-width: 768px) {
+    .productSection .container {
+        flex-flow: column nowrap;
+    }
+    }
+    .productSection .container .wheelCard {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+    border: 1px solid #008CCC;
+    border-radius: 8px;
+    background: white;
+    margin: 2%;
+    padding: 2% 0;
+    box-shadow: 0px 3px 6px #00000029;
+    opacity: 0.9;
+    }
+    @media (max-width: 768px) {
+    .productSection .container .wheelCard {
+        width: 100%;
+    }
+    }
+    .productSection .container .wheelCard .wheelsHeader {
+    color: #008CCC;
+    }
+    @media (max-width: 768px) {
+    .productSection .container .wheelCard .wheelsHeader {
+        margin-top: 20px;
+    }
+    }
+    .productSection .container .wheelCard .wheelImage {
+    max-width: 100%;
+    padding: 20px;
+    }
+    .productSection .container .wheelInfo {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    align-items: center;
+    }
+    .productSection .container .wheelInfo .wheelCardText {
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+    }
+    .productSection .container .wheelInfo .styleIcons {
+    width: 100%;
+    border-top: 1px solid black;
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    }
+    .productSection .container .wheelInfo .styleIcons .skateStyle {
+    flex-basis: 30%;
+    padding: 1.5%;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    }
+    .productSection .container .wheelInfo .styleIcons .skateStyle h3 {
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    }
+    .productSection .container .wheelInfo .styleIcons .styleIcon {
+    width: 100%;
+    margin: 2%;
+    }
+    .productSection .container .wheelInfo .viewButton {
+    width: 100%;
+    padding: 20px 0;
+    margin-top: 20px;
+    border-radius: 50px;
+    background-color: #008CCC;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 1.5rem;
+    text-decoration: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+    }
+    .productSection .container .wheelInfo .viewButton:hover {
+    background-color: #0061a7;
+    }
+    @media (max-width: 768px) {
+    .productSection .container .wheelInfo .viewButton {
+        margin-bottom: 20px;
+    }
+    }
+    .madeInAmerica {
+    min-height: 100px;
+    background-color: #EE3E46;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    @media (max-width: 768px) {
+    .madeInAmerica h2 {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 5% 0;
+        white-space: pre-wrap;
+    }
+    .madeInAmerica h2 .whiteLogo {
+        margin-bottom: 4%;
+    }
+    }
+    .madeInAmerica .whiteLogo {
+    padding-right: 2%;
+    }
+    .wheelsHardware {
+    min-height: 400px;
+    background-color: #FBFBFB;
+    }
+    .aboutAnabolix {
+    width: 100%;
+    }
+
+  </style>
+
+</head>
+  <body>
+    <div class="productSection">
+      <h1>QUAD <span>WHEELS</span></h1>
+
+      <div class="sectionDescription">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione nesciunt harum in iusto, vitae ullam velit nemo exercitationem adipisci molestias veniam eum ut distinctio eius omnis placeat est fuga.</p>
+      </div>
+
+      <div class="container">
+            
+        <div class="wheelCard">
+          <h2 class="wheelsHeader">Heir</h2>
+
+          <div class="wheelImage">
+            <img src="./images/card-images/heir.png" width="100%" alt="Anabolix Heir Wheel"/>
+          </div>
+
+          <div class="wheelInfo">
+            <p class="wheelCardText">Poured with our premium Vanguard Urethane, the Heir is a perfect combination of grip, durability, and speed, making it a great choice all skaters.</p>
+
+            <div class="styleIcons">
+
+              <div class="skateStyle derby">
+                <h3>Session</h3>
+                <img class="styleIcon" src="images/icon/session-artistic.svg" />
+              </div>
+              
+            </div>
+            <a href="#" class="viewButton">View Heirs</a>
+          </div>
+        </div>
+        
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Gentry</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/gentry.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">The Vanguard Urethane formula, urethane hub, and narrow width makes the Gentry durable and lightweight - which means it’s perfect for agile skaters, lengthy sessions, and kids.</p>
+  
+              <div class="styleIcons">
+  
+                <div class="skateStyle derby">
+                  <h3>Derby</h3>
+                  <img class="styleIcon" src="images/icon/derbyIcon.svg" />
+                </div>
+  
+                <div class="skateStyle jam">
+                  <h3>Indoor Session</h3>
+                  <img class="styleIcon" src="images/icon/session-artistic.svg" />
+                </div>
+                  
+              </div>
+              <a href="#" class="viewButton">View Gentry</a>
+            </div>
+        </div>
+
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Reign</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/reign.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">The Reign Series wheels by Anabolix are our fastest wheel. Our durable Vanguard Urethane formula gives you all of the grip you need in corners without sacrificing speed.</p>
+  
+              <div class="styleIcons">
+  
+                <div class="skateStyle derby">
+                  <h3>Speed</h3>
+                  <img class="styleIcon" src="images/icon/outdoor-speed.svg" />
+                </div>
+  
+                <div class="skateStyle jam">
+                  <h3>Jam</h3>
+                  <img class="styleIcon" src="images/icon/jamSkate.svg" />
+                </div>
+  
+                <div class="skateStyle jam">
+                  <h3>Session</h3>
+                  <img class="styleIcon" src="images/icon/session-artistic.svg" />
+                </div>
+                
+              </div>
+              <a href="#" class="viewButton">View Reign</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="madeInAmerica">
+      <h2><img class="whiteLogo" src="images/logo-horizontal.svg"><span> Wheels Are Proudly Made in the USA</span></h2>
+    </div>
+
+    <div class="productSection grey-background">
+      <h1>Specialty <span>Wheels</span></h1>
+
+      <div class="sectionDescription">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero ratione nesciunt harum in iusto, vitae ullam velit nemo exercitationem adipisci molestias veniam eum ut distinctio eius omnis placeat est fuga.</p>
+      </div>
+
+      <div class="container">
+            
+        <div class="wheelCard">
+          <h2 class="wheelsHeader">Catapult</h2>
+
+          <div class="wheelImage">
+            <img src="./images/card-images/catapult.png" width="100%" alt="Anabolix Heir Wheel"/>
+          </div>
+
+          <div class="wheelInfo">
+            <p class="wheelCardText">This FR inspired Aggressive Quad Wheel can be used on skates or skateboards thris line.</p>
+
+            <div class="styleIcons">
+
+              <div class="skateStyle derby">
+                <h3>Outdoor / Park</h3>
+                <img class="styleIcon" src="images/icon/outdoor-speed.svg" />
+              </div>
+              
+            </div>
+            <a href="#" class="viewButton">View Catapult</a>
+          </div>
+        </div>
+        
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Diamond</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/diamond.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">PLACEHOLDER--This FR inspired Aggressive Quad Wheel can be used on skates or skateboards thris line</p>
+  
+              <div class="styleIcons">
+  
+                <div class="skateStyle derby">
+                  <h3>Park</h3>
+                  <img class="styleIcon" src="images/icon/outdoor-speed.svg" />
+                </div>
+              </div>
+              <a href="#" class="viewButton">View Diamond</a>
+            </div>
+        </div>
+
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Knight</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/knight-wheel.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">Take your speed skating to the next level with our 89A practice / training wheel</p>
+  
+              <div class="styleIcons">
+  
+                <div class="skateStyle derby">
+                  <h3>Speed</h3>
+                  <img class="styleIcon" src="images/icon/speed-3.svg" />
+                </div>
+  
+                <div class="skateStyle jam">
+                  <h3>Speed</h3>
+                  <img class="styleIcon" src="images/icon/speed-4.svg" />
+                </div>
+  
+              </div>
+              <a href="#" class="viewButton">View Knight</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="productSection grey-background">
+      <h1>Hubs & <span>Hardware</span></h1>
+
+      <div class="sectionDescription">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque quas molestias deserunt ab, iste beatae voluptatibus aspernatur dicta, laborum amet voluptatum molestiae eaque quo, laudantium qui voluptate magnam dolor maxime.</p>
+      </div>
+
+      <div class="container">
+            
+        <div class="wheelCard">
+          <h2 class="wheelsHeader">Speedframes</h2>
+
+          <div class="wheelImage">
+            <img src="./images/card-images/frames.png" width="100%" alt="Anabolix Heir Wheel"/>
+          </div>
+
+          <div class="wheelInfo">
+            <p class="wheelCardText">Our dual-mounted inline speed frames are aluminum extruded & machine finished</p>
+
+            <a href="#" class="viewButton">View Speedframes</a>
+          </div>
+        </div>
+        
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Hubs</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/regent-hubs.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">Our removeable fan-jet style hubs are specially designed to provide a tight fit and come in 2 different styles.</p>
+  
+              <a href="#" class="viewButton">View Hubs</a>
+            </div>
+        </div>
+
+        <div class="wheelCard">
+
+            <h2 class="wheelsHeader">Bearings</h2>
+  
+            <div class="wheelImage">
+              <img src="./images/card-images/bearings.png" width="100%" alt="Anabolix Heir Wheel"/>
+            </div>
+  
+            <div class="wheelInfo">
+              <p class="wheelCardText">Our durable hybrid ceramic bearings come in both 7mm and 8mm sizes and ship with a full set of 16 bearings.</p>
+  
+              <a href="#" class="viewButton">View Knight</a>
+            </div>
+        </div>
+
+      </div>
+    </div>
+
+  
+  </body>
+</html>
