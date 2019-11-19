@@ -167,20 +167,29 @@ html {
   flex-flow: column wrap;
   text-align: center;
 }
-.quadWheels {
+.sectionDescription {
+  max-width: 600px;
+  margin: 20px auto 0 auto;
+  font-size: 16px;
+  line-height: 24px;
+}
+.grey-background {
+  background: #D6D6D6;
+}
+.productSection {
   width: 100%;
 }
-.quadWheels h1 {
+.productSection h1 {
   text-align: center;
   padding-top: 2%;
 }
-.quadWheels .container {
+.productSection .container {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
-.quadWheels .container .wheelCard {
+.productSection .container .wheelCard {
   width: 30%;
   display: flex;
   align-items: center;
@@ -194,24 +203,24 @@ html {
   box-shadow: 0px 3px 6px #00000029;
   opacity: 0.9;
 }
-.quadWheels .container .wheelCard .wheelsHeader {
+.productSection .container .wheelCard .wheelsHeader {
   color: #008CCC;
 }
-.quadWheels .container .wheelCard .wheelImage {
+.productSection .container .wheelCard .wheelImage {
   max-width: 100%;
 }
-.quadWheels .container .wheelInfo {
+.productSection .container .wheelInfo {
   width: 90%;
   display: flex;
   flex-flow: column wrap;
   align-content: center;
   align-items: center;
 }
-.quadWheels .container .wheelInfo .wheelCardText {
+.productSection .container .wheelInfo .wheelCardText {
   font-size: 1.25rem;
   line-height: 1.5rem;
 }
-.quadWheels .container .wheelInfo .styleIcons {
+.productSection .container .wheelInfo .styleIcons {
   width: 100%;
   border-top: 1px solid black;
   margin-top: 10px;
@@ -221,21 +230,21 @@ html {
   align-content: center;
   align-items: center;
 }
-.quadWheels .container .wheelInfo .styleIcons .skateStyle {
+.productSection .container .wheelInfo .styleIcons .skateStyle {
   flex-basis: 120px;
   flex-shrink: 1;
 }
-.quadWheels .container .wheelInfo .styleIcons .skateStyle h3 {
+.productSection .container .wheelInfo .styleIcons .skateStyle h3 {
   font-size: 12px;
   font-weight: bold;
   text-transform: uppercase;
   font-family: sans-serif;
 }
-.quadWheels .container .wheelInfo .styleIcons .styleIcon {
+.productSection .container .wheelInfo .styleIcons .styleIcon {
   width: 100%;
   margin: 2%;
 }
-.quadWheels .container .wheelInfo .viewButton {
+.productSection .container .wheelInfo .viewButton {
   width: 100%;
   padding: 20px 0;
   border-radius: 50px;
@@ -249,7 +258,7 @@ html {
   font-weight: bold;
   letter-spacing: 1px;
 }
-.quadWheels .container .wheelInfo .viewButton:hover {
+.productSection .container .wheelInfo .viewButton:hover {
   background-color: #0061a7;
 }
 .madeInAmerica {
