@@ -139,7 +139,7 @@ h1 span {
 }
 h2 {
   font-family: paralucent, sans-serif;
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: bold;
   color: white;
   text-transform: uppercase;
@@ -148,7 +148,7 @@ h2 {
   justify-content: center;
 }
 h2 span {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 p {
   font-family: open-sans, sans-serif;
@@ -173,6 +173,11 @@ html {
   font-size: 16px;
   line-height: 24px;
 }
+@media (max-width: 768px) {
+  .sectionDescription {
+    margin: 20px 10px 0 10px;
+  }
+}
 .grey-background {
   background: #D6D6D6;
 }
@@ -189,6 +194,11 @@ html {
   align-items: center;
   justify-content: center;
 }
+@media (max-width: 768px) {
+  .productSection .container {
+    flex-flow: column nowrap;
+  }
+}
 .productSection .container .wheelCard {
   width: 30%;
   display: flex;
@@ -203,8 +213,18 @@ html {
   box-shadow: 0px 3px 6px #00000029;
   opacity: 0.9;
 }
+@media (max-width: 768px) {
+  .productSection .container .wheelCard {
+    width: 80%;
+  }
+}
 .productSection .container .wheelCard .wheelsHeader {
   color: #008CCC;
+}
+@media (max-width: 768px) {
+  .productSection .container .wheelCard .wheelsHeader {
+    margin-top: 20px;
+  }
 }
 .productSection .container .wheelCard .wheelImage {
   max-width: 100%;
@@ -262,6 +282,11 @@ html {
 }
 .productSection .container .wheelInfo .viewButton:hover {
   background-color: #0061a7;
+}
+@media (max-width: 768px) {
+  .productSection .container .wheelInfo .viewButton {
+    margin-bottom: 20px;
+  }
 }
 .madeInAmerica {
   min-height: 100px;
